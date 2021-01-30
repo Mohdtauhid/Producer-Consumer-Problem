@@ -13,7 +13,7 @@ public class Main
 {
 public static void main(String[] args) 
 {
-List list = new ArrayList();
+List list = new ArrayList(); //Same memory is shared by both producers and consumers
 int size = 8;  // Memory Size
 Thread t1 = new Thread(new Producer(list, size), "Producer");
 Thread t2 = new Thread(new Consumer(list), "Consumer");
